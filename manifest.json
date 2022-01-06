@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "Monterail ForNext",
+  "description": "Monterail ForNext, a Thunderbird theme inspired by the mockup of Monterail",
+  "version": "1.0",
+  "author": "Javier Campos",
+  "homepage_url": "https://addons.thunderbird.net/en-US/thunderbird/addon/monterail-fornext/",
+  "applications": {
+    "gecko": {
+      "id": "fornext@asyris.org",
+      "strict_min_version": "91.0"
+    }
+  },
+  "icons": {
+    "64": "icon.png"
+  },
+  "experiment_apis": {
+    "WindowListener": {
+      "schema": "api/WindowListener/schema.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "paths": [["WindowListener"]],
+        "script": "api/WindowListener/implementation.js"
+      }
+    }
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "options_ui": {
+    "page": "content/options.html",
+    "browser_style": true
+  },
+  "permissions": ["storage"]
+}
+
