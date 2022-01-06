@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Monterail ForNext",
   "description": "Monterail ForNext, a Thunderbird theme inspired by the mockup of Monterail",
-  "version": "1.0",
+  "version": "1.1",
   "author": "Javier Campos",
   "homepage_url": "https://addons.thunderbird.net/en-US/thunderbird/addon/monterail-fornext/",
   "applications": {
